@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pixelate &mdash; Photography</title>
+    <!-- Main -->
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/photography.css">
+    <!-- Icofont -->
+    <link rel="stylesheet" href="lib/icofont/icofont.min.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="lib/aos/aos.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="lib/animate/animate.css">
+    <!-- Flickity -->
+    <link rel="stylesheet" href="lib/flickity/flickity.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="hero is-black is-fullheight pixelate_hero">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head" id="pixelate_herohead">
+        <header class="navbar is-spaced">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item pixelate_logo">
+                Pixelate
+              </a>
+
+              <span class="navbar-burger has-text-white" data-target="navbarMenuHeroC">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item">
+                  Home
+                </a>
+
+                <a class="navbar-item">
+                  About
+                </a>
+
+                <a class="navbar-item">
+                  Portfolio
+                </a>
+
+                <a class="navbar-item">
+                  Services
+                </a>
+
+                <a class="navbar-item">
+                  Contact
+                </a>
+              </div>
+            </div>
+
+            <div id="navbarMenuHeroC" class="navbar-menu pixelate_canvas is-hidden-desktop">
+              <div class="navbar-brand is-hidden-desktop">
+                <a href="index.html" class="navbar-item pixelate_logo">
+                  Pixelate
+                </a>
+              </div>
+              <div class="navbar-end">
+                <a class="navbar-item">
+                  Home
+                </a>
+
+                <a class="navbar-item">
+                  About
+                </a>
+
+                <a class="navbar-item">
+                  Portfolio
+                </a>
+
+                <a class="navbar-item">
+                  Services
+                </a>
+
+                <a class="navbar-item">
+                  Contact
+                </a>
+              </div>
+
+              <div class="pixelate_canvas_tm">
+                <div class="pixelate_section_description has-text-left has-text-left">
+                  Copyright &copy; Pixelate All Rights Reserved.
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body" id="pixelate_herobody">
+        <div class="container has-text-centered">
+          <h1 class="is-size-1-mobile title pixelate_headline"
+            data-aos="fade-up" data-aos-duration="1000">
+            Creating Photos <br>
+            <em>With</em> Beautiful Moments
+          </h1>
+
+          <a href="#" class="button pixelate_cta mt-6"
+            data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            View Portfolio <i class="icofont-arrow-right icofont-1x ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container mt-6 mb-6">
+        <div class="columns">
+          <div class="column is-5">
+            <h2 class="title pixelate_section_title"
+              data-aos="fade-right" data-aos-duration="700">
+              What we offer
+            </h2>
+            <p class="subtitle pt-3 pixelate_section_description"
+              data-aos="fade-right" data-aos-duration="700" data-aos-delay="500">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+            </p>
+          </div>
+        </div>
+
+        <div class="columns mt-3">
+          <div class="column is-4"
+            data-aos="fade-down" data-aos-duration="700" data-aos-delay="800">
+            <i class="icofont-waiter-alt icofont-4x pixelate__offer__icon"></i>
+            <h3 class="title pixelate_offer_title mt-4">
+              Wedding photography
+            </h3>
+            <p class="subtitle pixelate_offer_desc pt-1">
+              sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            </p>
+          </div>
+
+          <div class="column is-4"
+            data-aos="fade-down" data-aos-duration="700" data-aos-delay="1200">
+            <i class="icofont-camera-alt icofont-4x pixelate__offer__icon"></i>
+            <h3 class="title pixelate_offer_title mt-4">
+              Event photography
+            </h3>
+            <p class="subtitle pixelate_offer_desc pt-1">
+              sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            </p>
+          </div>
+
+          <div class="column is-4"
+          data-aos="fade-down" data-aos-duration="700" data-aos-delay="1600">
+            <i class="icofont-jacket icofont-4x pixelate__offer__icon"></i>
+            <h3 class="title pixelate_offer_title mt-4">
+              Fashion photography
+            </h3>
+            <p class="subtitle pixelate_offer_desc pt-1">
+              sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="1900">
+          <a href="#" class="pixelate_more_offer">
+            View all service <i class="icofont-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pixelate_portfolio_section">
+      <div class="container mt-6 mb-6">
+        <div class="columns">
+          <div class="column is-5">
+            <h2 class="title pixelate_section_title"
+              data-aos="fade-right" data-aos-duration="700">
+              Latest Work
+            </h2>
+            <p class="subtitle pt-3 pixelate_section_description"
+            data-aos="fade-right" data-aos-duration="700" data-aos-delay="500">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+            </p>
+          </div>
+        </div>
+
+        <div class="tile is-ancestor is-centered p-4">
+          <div class="tile is-4 is-vertical is-parent">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="https://source.unsplash.com/collection/190727/1080x566">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="https://source.unsplash.com/collection/190727/1080x1350">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="https://source.unsplash.com/collection/190727/1080x1350">
+              </figure>
+            </div>
+          </div>
+
+          <div class="tile is-vertical is-parent">
+            <div class="tile is-child">
+              <div class="tile is-child">
+                <figure class="image">
+                  <img src="https://source.unsplash.com/collection/190727/1080x1350">
+                </figure>
+              </div>
+            </div>
+            <div class="tile is-child">
+              <div class="tile is-child">
+                <figure class="image">
+                  <img src="https://source.unsplash.com/collection/190727/1080x1350">
+                </figure>
+              </div>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="https://source.unsplash.com/collection/190727/1080x566">
+              </figure>
+            </div>
+          </div>
+
+          <div class="tile is-4 is-vertical is-parent">
+            <div class="tile is-child">
+             <figure class="image">
+                <img src="https://source.unsplash.com/collection/190727/1080x566">
+              </figure>
+            </div>
+            <div class="tile is-child">
+             <figure class="image">
+                <img src="https://source.unsplash.com/collection/190727/1080x1350">
+              </figure>
+            </div>
+            <div class="tile is-child">
+             <figure class="image">
+                <img src="https://source.unsplash.com/collection/190727/1080x1350">
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="buttons is-centered mb-5"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <a href="#" class="button pixelate_cta mt-6">
+            View More <i class="icofont-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pb-0">
+      <div class="container">
+        <div class="columns mt-5 is-multiline is-gapless">
+          <div class="column">
+            <img src="image/cewe.png" class="pixelate_girl"
+            data-aos="fade-left" data-aos-duration="700">
+          </div>
+          <div class="column">
+            <h2 class="title pixelate_section_title mt-6 pt-6"
+              data-aos="fade-right" data-aos-duration="700">
+              What People Says
+            </h2>
+            <p class="subtitle pt-3 pixelate_section_description"
+              data-aos="fade-right" data-aos-duration="700" data-aos-delay="500">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem<br>accusantium doloremque laudantium, totam rem aperiam.
+            </p>
+
+            <div class="columns is-fullwidth is-multiline pb-6">
+              <div class="column is-12 pb-6">
+                <div class="main-carousel">
+                  <div class="carousel-cell">
+                    <div class="box pixelate_testimonial mt-2">
+                      <div class="p-4 mt-5 mb-5">
+                        <i class="icofont-quote-left icofont-3x pixelate_quote"></i>
+                        <p class="subtitle pixelate_testimonial_desc mt-5">
+                          molestias excepturi sint occaecati cupiditate non provident, similique<br>sunt in culpa qui officia deserunt mollitia animi, id est laborum et<br>dolorum fuga.
+                        </p>
+
+                        <div class="pixelate_rating">
+                          <i class="icofont-star"></i>
+                          <i class="icofont-star"></i>
+                          <i class="icofont-star"></i>
+                          <i class="icofont-star"></i>
+                          <i class="icofont-star"></i>
+                        </div>
+
+                        <h4 class="title pixelate_testimonial_name mt-5">
+                          John Allison
+                        </h4>
+                        <div class="pixelate_testimonial_role">
+                          Wedding Couple
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-cell">
+                    <div class="box pixelate_testimonial mt-2">
+                      <div class="p-4 mt-5 mb-5">
+                        <i class="icofont-quote-left icofont-3x pixelate_quote"></i>
+                        <p class="subtitle pixelate_testimonial_desc mt-5">
+                          molestias excepturi sint occaecati cupiditate non provident, similique<br>sunt in culpa qui officia deserunt mollitia animi, id est laborum et<br>dolorum fuga.
+                        </p>
+
+                        <div class="pixelate_rating">
+                          <i class="icofont-star"></i>
+                          <i class="icofont-star"></i>
+                          <i class="icofont-star"></i>
+                        </div>
+
+                        <h4 class="title pixelate_testimonial_name mt-5">
+                          Clarissa Allison
+                        </h4>
+                        <div class="pixelate_testimonial_role">
+                          Wedding Engagement
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-cell">
+                    <div class="box pixelate_testimonial mt-2">
+                      <div class="p-4 mt-5 mb-5">
+                        <i class="icofont-quote-left icofont-3x pixelate_quote"></i>
+                        <p class="subtitle pixelate_testimonial_desc mt-5">
+                          molestias excepturi sint occaecati cupiditate non provident, similique<br>sunt in culpa qui officia deserunt mollitia animi, id est laborum et<br>dolorum fuga.
+                        </p>
+
+                        <div class="pixelate_rating">
+                          <i class="icofont-star"></i>
+                          <i class="icofont-star"></i>
+                          <i class="icofont-star"></i>
+                          <i class="icofont-star"></i>
+                        </div>
+
+                        <h4 class="title pixelate_testimonial_name mt-5">
+                          Lisa Allison
+                        </h4>
+                        <div class="pixelate_testimonial_role">
+                          Wedding Couple
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pixelate_team_section">
+      <div class="container mt-6 mb-6">
+        <div class="columns">
+          <div class="column is-5">
+            <h2 class="title pixelate_section_title"
+              data-aos="fade-right" data-aos-duration="700">
+              Awesome Team
+            </h2>
+            <p class="subtitle pt-3 pixelate_section_description"
+            data-aos="fade-right" data-aos-duration="700" data-aos-delay="500">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+            </p>
+          </div>
+        </div>
+
+        <div class="columns mt-2">
+          <div class="column is-4"
+            data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
+            <figure class="image">
+              <img src="image/team-alt.jpg">
+            </figure>
+            <div class="has-text-centered">
+              <h4 class="title pixelate_team_name mt-5">
+                Jennifer Allison
+              </h4>
+              <div class="pixelate_team_role">
+                Photographer
+              </div>
+            </div>
+          </div>
+          <div class="column is-4"
+          data-aos="fade-down" data-aos-duration="700" data-aos-delay="1200">
+            <figure class="image">
+              <img src="image/team-3.jpg">
+            </figure>
+            <div class="has-text-centered">
+              <h4 class="title pixelate_team_name mt-5">
+                Albert Allison
+              </h4>
+              <div class="pixelate_team_role">
+                Creative Director
+              </div>
+            </div>
+          </div>
+          <div class="column is-4"
+          data-aos="fade-up" data-aos-duration="700" data-aos-delay="1400">
+            <figure class="image">
+              <img src="image/team-2.jpg">
+            </figure>
+            <div class="has-text-centered">
+              <h4 class="title pixelate_team_name mt-5">
+                Regina Allison
+              </h4>
+              <div class="pixelate_team_role">
+                Photographer
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pixelate_footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-4">
+            <div class="pixelate_footer_logo">
+              Pixelate
+            </div>
+            <p class="subtitle mt-2 pixelate_footer_description">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,<br>totam rem aperiam.
+            </p>
+
+            <div class="pixelate_social">
+              <a href="#">
+                <i class="icofont-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="icofont-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="icofont-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="icofont-pinterest"></i>
+              </a>
+            </div>
+          </div>
+          <div class="column is-2">
+            <h5 class="title pixelate_footer_title">
+              Quick Links
+            </h5>
+            <ul class="pixelate_footer_menu">
+              <li>
+                <a href="#">Porftolio</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="column is-3">
+            <h5 class="title pixelate_footer_title">
+              Contact
+            </h5>
+            <ul class="pixelate_footer_menu">
+              <li>
+                <a href="#">
+                  <i class="icofont-phone"></i>
+                  +021 5421 1187
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icofont-google-map"></i>
+                  9962 Oxford Dr. Auburn, Ny
+                  13021
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="icofont-envelope"></i>
+                  info@pixelate.com
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="column is-3">
+            <h5 class="title pixelate_footer_title">
+              Recent Works
+            </h5>
+            <div class="columns is-multiline is-mobile is-gapless pixelate_recent">
+              <div class="column is-4">
+                <figure class="image">
+                  <img src="image/team-alt.jpg" class="p-1">
+                </figure>
+              </div>
+
+              <div class="column is-4">
+                <figure class="image">
+                  <img src="image/team-1.jpg" class="p-1">
+                </figure>
+              </div>
+
+              <div class="column is-4">
+                <figure class="image">
+                  <img src="image/team-2.jpg" class="p-1">
+                </figure>
+              </div>
+
+              <div class="column is-4">
+                <figure class="image">
+                  <img src="image/team-1.jpg" class="p-1">
+                </figure>
+              </div>
+
+              <div class="column is-4">
+                <figure class="image">
+                  <img src="image/team-2.jpg" class="p-1">
+                </figure>
+              </div>
+
+              <div class="column is-4">
+                <figure class="image">
+                  <img src="image/team-alt.jpg" class="p-1">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer pixelate_own">
+      <div class="container">
+        <div class="pixelate_section_description has-text-left has-text-centered-mobile">
+          Copyright &copy; Pixelate All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- AOS -->
+    <script type="text/javascript" src="lib/aos/aos.js"></script>
+    <!-- Flickity -->
+    <script type="text/javascript" src="lib/flickity/flickity.pkgd.min.js"></script>
+    <!-- Main JS -->
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
+</html>
