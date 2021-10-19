@@ -5,7 +5,6 @@
 *:after{
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
 	outline: transparent;
 }
 
@@ -38,8 +37,7 @@ p, button, a, li{
 }
 
 .carousel-cell {
-  width: 100%; /* full width */ /* height of carousel */
-  margin-right: 10px;
+  width: 100%;
 }
 
 .flickity-page-dots {
@@ -52,7 +50,6 @@ p, button, a, li{
     text-align: center;
     line-height: 1;
 }
-
 /* Root */
 
 
@@ -60,6 +57,7 @@ p, button, a, li{
 .navbar-item.pixelate_logo{
 	font-weight: 500;
 	font-size: 1.5rem;
+	letter-spacing: 0;
 	font-family: 'Prata',serif;
 	padding: .5rem .75rem;
 	text-transform: none;
