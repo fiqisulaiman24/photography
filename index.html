@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Pixelate &mdash; Photography</title>
+    <meta name="theme-color" content="#d0c8ba"/>
+    <meta name="description" content="Pixelate is Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.">
+    <meta name="author" content="Fiqisulaiman">
     <!-- Main -->
     <link rel="stylesheet" href="css/bulma.min.css">
     <!-- Style -->
@@ -17,6 +19,8 @@
     <link rel="stylesheet" href="lib/animate/animate.css">
     <!-- Flickity -->
     <link rel="stylesheet" href="lib/flickity/flickity.css">
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="lib/lightbox/simple-lightbox.min.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +49,7 @@
                   Home
                 </a>
 
-                <a class="navbar-item">
+                <a href="#about" class="navbar-item">
                   About
                 </a>
 
@@ -110,7 +114,7 @@
             <em>With</em> Beautiful Moments
           </h1>
 
-          <a href="#" class="button pixelate_cta mt-6"
+          <a href="#portfolio" class="button pixelate_cta mt-6"
             data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
             View Portfolio <i class="icofont-arrow-right icofont-1x ml-2"></i>
           </a>
@@ -167,13 +171,15 @@
             </p>
           </div>
         </div>
-        <a href="#" class="pixelate_more_offer">
-          View all service <i class="icofont-arrow-right ml-1"></i>
-        </a>
+        <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="1800">
+          <a href="#" class="pixelate_more_offer">
+            View all service <i class="icofont-arrow-right ml-1"></i>
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="section pixelate_portfolio_section">
+    <section class="section pixelate_portfolio_section" id="portfolio">
       <div class="container mt-6 mb-6">
         <div class="columns">
           <div class="column is-5">
@@ -188,61 +194,81 @@
           </div>
         </div>
 
-        <div class="tile is-ancestor is-centered p-3">
+        <div class="tile is-ancestor is-centered p-3 pixelate_portfolio">
           <div class="tile is-4 is-vertical is-parent">
             <div class="tile is-child">
               <!-- Landscape image -->
-              <figure class="image">
-                <img src="image/portfolio/work-1-ls.jpg">
-              </figure>
+              <a href="image/portfolio/work-1-ls.jpg">
+                <figure class="image">
+                  <img src="image/portfolio/work-1-ls.jpg">
+                </figure>
+              </a>
             </div>
             <!-- Portrait image -->
             <div class="tile is-child">
-              <figure class="image">
-                <img src="image/portfolio/work-6-pt.jpg">
-              </figure>
+              <a href="image/portfolio/work-6-pt.jpg">
+                <figure class="image">
+                  <img src="image/portfolio/work-6-pt.jpg">
+                </figure>
+              </a>
             </div>
             <!-- Landscape Image -->
             <div class="tile is-child">
-              <figure class="image">
-                <img src="image/portfolio/work-5-pt.jpg">
-              </figure>
+              <a href="image/portfolio/work-5-pt.jpg">
+                <figure class="image">
+                  <img src="image/portfolio/work-5-pt.jpg">
+                </figure>
+              </a>
             </div>
           </div>
 
           <div class="tile is-vertical is-parent">
             <div class="tile is-child">
-              <figure class="image">
-                <img src="image/portfolio/work-4-pt.jpg">
-              </figure>
+              <a href="image/portfolio/work-4-pt.jpg">
+                <figure class="image">
+                  <img src="image/portfolio/work-4-pt.jpg">
+                </figure>
+              </a>
             </div>
             <div class="tile is-child">
-              <figure class="image">
-                <img src="image/portfolio/work-3-pt.jpg">
-              </figure>
+              <a href="image/portfolio/work-3-pt.jpg">
+                <figure class="image">
+                  <img src="image/portfolio/work-3-pt.jpg">
+                </figure>
+              </a>
             </div>
             <div class="tile is-child">
-              <figure class="image">
-                <img src="image/portfolio/work-3-ls.jpg">
-              </figure>
+              <a href="image/portfolio/work-3-ls.jpg">
+                <figure class="image">
+                  <img src="image/portfolio/work-3-ls.jpg">
+                </figure>
+              </a>
             </div>
           </div>
 
           <div class="tile is-4 is-vertical is-parent">
             <div class="tile is-child">
-             <figure class="image">
+             <a href="image/portfolio/work-2-ls.jpg">
+              <figure class="image">
                 <img src="image/portfolio/work-2-ls.jpg">
               </figure>
+             </a>
             </div>
+
             <div class="tile is-child">
-             <figure class="image">
-                <img src="image/portfolio/alt.jpg">
-              </figure>
+              <a href="image/portfolio/alt.jpg">
+                <figure class="image">
+                  <img src="image/portfolio/alt.jpg">
+                </figure>
+              </a>
             </div>
+
             <div class="tile is-child">
-             <figure class="image">
-                <img src="image/portfolio/work-2-pt.jpg">
-              </figure>
+              <a href="image/portfolio/work-2-pt.jpg">
+                <figure class="image">
+                  <img src="image/portfolio/work-2-pt.jpg">
+                </figure>
+              </a>
             </div>
           </div>
         </div>
@@ -259,16 +285,17 @@
       <div class="container">
         <div class="columns mt-5 is-gapless">
           <div class="column">
-            <img src="image/cewe.png" class="pixelate_girl">
+            <img src="image/cewe.png" class="pixelate_girl"
+            data-aos="fade-right" data-aos-duration="700">
           </div>
-          <div class="column">
+          <div class="column is-12-mobile">
             <h2 class="title pixelate_section_title mt-6 pt-6"
               data-aos="fade-right" data-aos-duration="700">
               What People Says
             </h2>
             <p class="subtitle pt-3 pixelate_section_description"
               data-aos="fade-right" data-aos-duration="700" data-aos-delay="500">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem<br class="is-hidden-mobile">accusantium doloremque laudantium.
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
             </p>
 
             <div class="columns is-multiline pb-6">
@@ -434,13 +461,13 @@
 
             <div class="pixelate_social">
               <a href="#">
-                <i class="icofont-facebook"></i>
+                <i class="icofont-instagram"></i>
               </a>
               <a href="#">
                 <i class="icofont-twitter"></i>
               </a>
               <a href="#">
-                <i class="icofont-instagram"></i>
+                <i class="icofont-facebook"></i>
               </a>
               <a href="#">
                 <i class="icofont-pinterest"></i>
@@ -546,6 +573,10 @@
         </div>
       </div>
     </footer>
+    <!-- Jquery -->
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <!-- Lightbox -->
+    <script type="text/javascript" src="lib/lightbox/simple-lightbox.min.js"></script>
     <!-- AOS -->
     <script type="text/javascript" src="lib/aos/aos.js"></script>
     <!-- Flickity -->
