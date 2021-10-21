@@ -11,3 +11,4 @@ Landing page website design for photography business powered with Bulma CSS fram
 - Flickity Slider
 
 # Created by Fiqisulaiman
+don't forget to give a star okay! :D
